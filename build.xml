@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<project name="havis.util.cycle" default="publish" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:if="ant:if">
+
+	<property file="${basedir}/build.properties" />
+
+	<import>
+		<url url="${ivy.url}/ant/default.xml" />
+	</import>
+
+	<target name="clean-cache">
+		<clean-cache />
+	</target>
+
+	<target name="clean-all">
+		<clean-all />
+	</target>
+
+
+	<target name="jar">
+		<compile dst="${build.dir.classes}">
+			<src path="${src.main.dir}" />
+		</compile>
+		<module-info />
+		<jar-bin />
+	</target>
+
+	<target name="publish" depends="jar" description="Publishes the JAR to the repository">
+		<publish app="false" />
+	</target>
+
+</project>

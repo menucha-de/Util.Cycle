@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+override_dh_auto_build:
+	ant -lib /usr/share/java -Divy.default.ivy.user.dir=/tmp -Dkeyfile=$(keyfile) -Divy.resolver=$(RESOLVER) -Divy.settings=ivysettings_remote.xml -Divy.url=$(IVY) -Dapi.url=$(API) -Djavac.debug=$(DEBUG)
+	
+
+

@@ -1,0 +1,18 @@
+name: Publish package
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v2
+      - name: Build
+        id: build
+        uses: peramic/actions/build-stretch@v1
+        with:
+          arch: all
+          script: ./mkapp
+          token: ${{ secrets.ACTIONS }}
