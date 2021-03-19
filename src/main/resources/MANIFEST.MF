@@ -3,7 +3,7 @@ Bundle-SymbolicName: havis.util.cycle
 Bundle-Version: 2.7.0
 Implementation-Version: 2.7
 Bundle-ManifestVersion: 2
-Bundle-Vendor: HARTING IT_SD
+Bundle-Vendor: Menucha Team <info@menucha.de>
 Export-Package: 
  havis.util.cycle,
  havis.util.cycle.common

@@ -1,5 +1,5 @@
 Source: havis.util.cycle
-Maintainer: HARTING IT_SD <opensource@HARTING.com>
+Maintainer: Menucha Team <info@menucha.de>
 Build-Depends: debhelper, dh-exec, default-jdk-headless:amd64, ant:all, ivy:all, libjsch-java:all
  
 Package: havis.util.cycle

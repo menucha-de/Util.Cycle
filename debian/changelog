@@ -1,6 +1,6 @@
-havis.util.cycle (3.0.0-1) unstable; urgency=medium
+havis.util.cycle (2.7.0-1) unstable; urgency=medium
 
-  * Switches to debian package build
+  * Initialization
 
- -- HARTING IT_SD <opensource@HARTING.com>  Thu, 14 May 2020 08:26:14 +0200
+ -- Menucha Team <info@menucha.de>  Fri, 19 Mar 2021 11:15:16 +0100
  
